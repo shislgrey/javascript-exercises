@@ -3,9 +3,7 @@ const repeatString = function (str, reps) {
     if (reps < 0) {
         newstr = 'ERROR';
     } else {
-        for (let counter = 0; counter < reps; counter++) {
-            newstr = newstr.concat('', str);
-        }
+        newstr = str.repeat(reps);
     }
     return newstr;
 };
