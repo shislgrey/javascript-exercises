@@ -8,9 +8,9 @@ const repeatString = function (str, reps) {
     // return newstr;
 
 // Alternative solutions:
-// Short, program flow still obvious through if-else
-    // if (reps < 0) { return 'ERROR'; }
-    // else { return str.repeat(reps); }
+// Short, but program flow still obvious via if-this-else-that
+    if (reps < 0) { return 'ERROR'; }
+    else { return str.repeat(reps); }
 
 // Inverted from previous
     // if (reps >= 0) { return str.repeat(reps); }
@@ -20,8 +20,8 @@ const repeatString = function (str, reps) {
     // if (reps < 0) return 'ERROR';
     // return str.repeat(reps);
 
-// shortest
-    return reps < 0 ? 'ERROR' : str.repeat(reps)
+// ternary if: shortest, but not very readable
+    // return reps < 0 ? 'ERROR' : str.repeat(reps)
     //     ( cond ) ? (true)  : ( false )
 };
 
