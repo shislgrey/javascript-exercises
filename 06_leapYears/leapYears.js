@@ -12,10 +12,11 @@ const leapYears = function (year) {
 
     // Pretty compact - don't be shy about "cheating" with builtins
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+    // This can be optimized
     // if (new Date(year, 1, 29).getDate() === 29) { return true; }
     // return false;
 
-    // Most compact - abusing return values
+    // Most compact, single condition means we can get false/true directly
     return (new Date(year, 1, 29).getDate() === 29)
 };
 
