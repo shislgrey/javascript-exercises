@@ -10,11 +10,13 @@ const leapYears = function (year) {
     // if (year % 4 == 0) { return true; }
     // return false;
 
-    // Most compact - don't be shy about "cheating" with builtins
+    // Pretty compact - don't be shy about "cheating" with builtins
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
-    if (new Date(year, 1, 29).getDate() === 29) { return true; }
-    return false;
+    // if (new Date(year, 1, 29).getDate() === 29) { return true; }
+    // return false;
 
+    // Most compact - abusing return values
+    return (new Date(year, 1, 29).getDate() === 29)
 };
 
 // Do not edit below this line
