@@ -10,6 +10,5 @@ const fibonacci = function (num) {
     }
     return fib[num];
 };
-fibonacci("2")
 // Do not edit below this line
 module.exports = fibonacci;
