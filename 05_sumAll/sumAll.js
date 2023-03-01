@@ -13,13 +13,13 @@ const sumAll = function (a, b) {
         // return sum;
 
         // FIXME: make this work with larger number first
-        return ((b-a)+1) / 2 * (a+b); 
+        return (Math.abs(b - a) + 1) / 2 * (a + b);
     }
     return "ERROR";
     // for i = a, i <= b, i++
     // return i.reduce((i, i+1) => (i + (i+1), 0))
 };
-sumAll(123,1)
+sumAll(123, 1)
 
 // Do not edit below this line
 module.exports = sumAll;
