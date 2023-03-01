@@ -12,7 +12,6 @@ const sumAll = function (a, b) {
         // }
         // return sum;
 
-        // FIXME: make this work with larger number first
         return (Math.abs(b - a) + 1) / 2 * (a + b);
     }
     return "ERROR";
